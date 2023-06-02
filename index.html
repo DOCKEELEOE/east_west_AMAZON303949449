@@ -1,0 +1,29 @@
+<head>
+    <title>Ria Red Boots BTS</title>
+    <script src="dash.js"></script>
+
+</head>
+
+<body>
+    <video id="videoPlayer" controls></video>
+
+    <script>
+        const protData = {
+            "org.w3.clearkey": {
+                "clearkeys": {
+                    "syb4lbaiTMWk3HCZVygFnA": "YX2KElooTfSOPGsYZjSKPw"
+                }
+            }
+        };
+        var video,
+            player,
+            url = "964CV-DB897-VBXB96F-5JK_corrected.mpd";
+
+        video = document.querySelector("video");
+        player = dashjs.MediaPlayer().create();
+        player.initialize(video, url, true);
+        player.setProtectionData(protData);
+    </script>
+
+</body>
+</html>
